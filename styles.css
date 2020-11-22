@@ -1,0 +1,33 @@
+body {
+    transition: 3000ms;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th {
+    border: 1px solid black;
+}
+
+th {
+    padding: 5px;
+    margin: 5px;
+}
+
+#editar,
+#borrar {
+    padding: 3px;
+    display: none;
+}
+
+#paraEditar:hover #editar {
+    display: inline;
+}
+
+#paraEditar:hover #borrar {
+    transition: 10000ms;
+    display: inline;
+}

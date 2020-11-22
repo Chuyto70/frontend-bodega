@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bodega</title>
+</head>
+
+<body>
+
+    </div>
+    <h1>Control de Bodega</h1>
+    <div>
+        <div class="card">
+            <h2>Ingresar Materia Prima</h2>
+            <form class="card-body" id="formulario">
+
+                <input type="text" id="item" placeholder="Materia prima...">
+
+
+                <input type="text" id="proveedor" placeholder="Proveedor...">
+
+                <input type="text" id="lote" placeholder="Lote...">
+
+
+                <input id="retest" type="date">
+                <label for="unidad">Unidad</label>
+                <select id="unidad">
+                    <option value="ML">ML</option>
+                    <option value="GR">GR</option>
+                    <option value="KG">KG</option>
+                    <option value="LT">LT</option>
+                  </select>
+
+
+
+
+
+                <input type="number" id="stock" placeholder="Stock...">
+
+                <input id="agregar" type="submit" class="btn btn-primary" value="Agregar">
+                <input id="limpiar" type="button" class="btn btn-seccundary" value="Limpiar">
+                <input type="button" value="Editar" style="display: none;" class="btn btn-warning" id="modificar">
+
+            </form>
+        </div>
+    </div>
+    <div>
+        <h1>Listado de Materias Primas</h1>
+        <table>
+            <thead id="tabla">
+                <tr>
+                    <th class="text-light" style="background-color:#9eb3c2;">Nombre
+
+                    </th>
+
+
+                    <th class="text-light" style="background-color:#9eb3c2;">Proveedor</th>
+                    <th class="text-light" style="background-color:#9eb3c2;">Lote</th>
+                    <th class="text-light" style="background-color:#9eb3c2;">Fecha de Vencimiento</th>
+                    <th class="text-light" style="background-color:#9eb3c2;">Unidad</th>
+                    <th class="text-light" style="background-color:#9eb3c2;">Stock</th>
+
+                </tr>
+
+            </thead>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="moment.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
